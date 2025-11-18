@@ -4,6 +4,7 @@ import 'package:skeletonizer/skeletonizer.dart';
 
 class AppTheme {
   static final lightTheme = ThemeData(
+    fontFamily: "Ubuntu",
     pageTransitionsTheme: const PageTransitionsTheme(
       builders: {
         TargetPlatform.android:
@@ -80,12 +81,14 @@ class AppTheme {
     segmentedButtonTheme: SegmentedButtonThemeData(
       style: ButtonStyle(
         backgroundColor: WidgetStateProperty.resolveWith<Color?>(
-          (states) =>
-              states.contains(WidgetState.selected) ? AppColors.accentBlue : const Color(0xFFF3F3F3),
+          (states) => states.contains(WidgetState.selected)
+              ? AppColors.accentBlue
+              : const Color(0xFFF3F3F3),
         ),
         foregroundColor: WidgetStateProperty.resolveWith<Color?>(
-          (states) =>
-              states.contains(WidgetState.selected) ? AppColors.white : AppColors.black,
+          (states) => states.contains(WidgetState.selected)
+              ? AppColors.white
+              : AppColors.black,
         ),
         side: WidgetStateProperty.resolveWith<BorderSide?>(
           (states) => states.contains(WidgetState.selected)
@@ -99,7 +102,7 @@ class AppTheme {
     ),
     filledButtonTheme: FilledButtonThemeData(
       style: ButtonStyle(
-        backgroundColor:  const WidgetStatePropertyAll<Color>(AppColors.blue),
+        backgroundColor: const WidgetStatePropertyAll<Color>(AppColors.blue),
         foregroundColor: const WidgetStatePropertyAll<Color>(AppColors.white),
         shape: WidgetStatePropertyAll<OutlinedBorder>(
           RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
@@ -120,6 +123,7 @@ class AppTheme {
   );
 
   static final darkTheme = ThemeData(
+    fontFamily: "Ubuntu",
     pageTransitionsTheme: const PageTransitionsTheme(
       builders: {
         TargetPlatform.android:
@@ -196,8 +200,9 @@ class AppTheme {
     segmentedButtonTheme: SegmentedButtonThemeData(
       style: ButtonStyle(
         backgroundColor: WidgetStateProperty.resolveWith<Color?>(
-          (states) =>
-              states.contains(WidgetState.selected) ? AppColors.accentBlue : const Color(0xFF1F1F1F),
+          (states) => states.contains(WidgetState.selected)
+              ? AppColors.accentBlue
+              : const Color(0xFF1F1F1F),
         ),
         foregroundColor: WidgetStateProperty.resolveWith<Color?>(
           (states) => AppColors.white,

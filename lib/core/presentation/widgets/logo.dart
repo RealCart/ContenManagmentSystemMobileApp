@@ -11,7 +11,7 @@ class Logo extends StatelessWidget {
       style: TextStyle(
         color: AppColors.white,
         fontSize: 48.0,
-        fontFamily: "Billabong",
+        fontFamily: "MomoSignature",
         fontWeight: FontWeight.w800,
       ),
     );

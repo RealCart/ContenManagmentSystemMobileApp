@@ -41,9 +41,24 @@ flutter:
     - assets/images/
 
   fonts:
-    - family: Billabong
+    - family: MomoSignature
       fonts:
-        - asset: assets/fonts/billabong_regular.otf
+        - asset: assets/fonts/MomoSignature-Regular.ttf
           style: normal
-        - asset: assets/fonts/billabong.ttf
+    - family: Ubuntu
+      fonts:
+        - asset: assets/fonts/Ubuntu-Light.ttf
+          style: normal
+        - asset: assets/fonts/Ubuntu-Regular.ttf
+          style: normal
+        - asset: assets/fonts/Ubuntu-Medium.ttf
+          style: normal
+        - asset: assets/fonts/Ubuntu-Bold.ttf
+          style: normal
+        - asset: assets/fonts/Ubuntu-LightItalic.ttf
+          style: italic
+        - asset: assets/fonts/Ubuntu-MediumItalic.ttf
+          style: italic
+        - asset: assets/fonts/Ubuntu-BoldItalic.ttf
+          style: italic
 
